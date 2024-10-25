@@ -1,0 +1,195 @@
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9e9e9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form container */
+.form-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Optional */
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px; /* Ensure labels are 12px */
+}
+body *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-size: 15px;
+}
+
+/* General list styling */
+ul {
+    list-style-type: disc; /* Ensure bullet points are displayed */
+    margin-left: 20px; /* Add indentation */
+    padding-left: 20px; /* Space between bullet and text */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 15px; /* Ensure it's consistent with other body text */
+}
+
+/* Optional - adjust specific sections */
+.section ul {
+    list-style-type: disc; /* Ensure bullet points in specific sections */
+}
+
+.responsibilities-bullets {
+    white-space: pre-line;  /* Ensure newlines in the text are respected */
+}
+
+.responsibilities-bullets::before {
+    content: "\2022";  /* Unicode for bullet point */
+    display: block;    /* Each responsibility will be displayed on a new line */
+    margin-left: -20px; /* Adjust left margin for bullets */
+}
+
+.responsibilities-bullets p {
+    margin: 0;
+    padding-left: 20px;  /* Ensure proper indentation for bullet points */
+}
+
+/* To target each new sentence that starts with a dash (-) */
+.responsibilities-bullets {
+    display: block;
+    white-space: pre-line;
+}
+
+.responsibilities-bullets:before {
+    content: "\2022";
+    display: inline-block;
+    margin-right: 10px;  /* Adjust spacing between bullet and text */
+}
+
+.responsibilities-bullets:before {
+    /* If needed. it
+
+    ul.responsibilities-bullets {
+    list-style-type: disc;  /* Bullet points */
+    margin-left: 20px;      /* Indentation */
+    padding-left: 20px;
+}
+
+ul.responsibilities-bullets li {
+    margin-bottom: 10px;    /* Space between items */
+    font-size: 15px;        /* Ensure font size is consistent */
+}
+
+/* Education container */
+.education-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.education-item {
+    margin-bottom: 5px; /* Reduce spacing between education items */
+}
+
+.education-row {
+    display: flex;
+    justify-content: space-between; /* Align left and right */
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.education-left {
+    width: 60%; /* Degree and school occupy 60% of the row */
+    text-align: left;
+}
+
+.education-right {
+    width: 40%; /* Dates occupy 40% of the row */
+    text-align: right;
+}
+
+.education-degree, .education-school, .education-dates {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2; /* Single spacing */
+}
+
+.education-item p {
+    line-height: 1.2; /* Single line spacing */
+}
+
+.education-dates {
+    font-size: 14px;
+    color: #333;
+    padding-right: 10px; /* Small padding for better positioning */
+}
+
+
+
+
