@@ -1,21 +1,23 @@
 import os
-import io
+#import io
 from django.shortcuts import render
 from django.http import HttpResponse, FileResponse
 from google.generativeai import configure, GenerativeModel
 from .forms import JobDescriptionForm
 
-from PyPDF2 import PdfReader, PdfWriter
+#from PyPDF2 import PdfReader, PdfWriter
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 from django.views.decorators.csrf import csrf_exempt
 from django.templatetags.static import static
 from weasyprint import HTML, CSS
 
-import tempfile
+#import tempfile
 from django.template.loader import render_to_string
 import re
 from dotenv import load_dotenv
+from django.template.loader import render_to_string
+#from wkhtmltopdf.views import PDFTemplateResponse
 
 
 # Load environment variables from the .env file
