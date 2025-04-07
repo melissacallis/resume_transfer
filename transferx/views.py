@@ -27,7 +27,7 @@ gemini_api_key = os.environ.get("GEMINI_API_KEY")
 configure(api_key=gemini_api_key)
 
 # Create the Gemini model instance
-model = GenerativeModel('gemini-pro')
+model = GenerativeModel('gemini-2.0-flash')
 
 def generate_job_c(job_a, job_b):
     prompt = f"""
